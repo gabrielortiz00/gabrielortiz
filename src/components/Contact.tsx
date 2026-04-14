@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 
-// TODO: update these with your actual email, GitHub username, and LinkedIn
+
 const links = [
   {
     label: "email",
-    href: "mailto:ortiz.gabr@northeastern.edu",
-    display: "ortiz.gabr@northeastern.edu",
+    href: "mailto:gabriel@gabrielortiz.io",
+    display: "gabriel@gabrielortiz.io",
   },
   {
     label: "github",

@@ -24,7 +24,7 @@ export default function Resume() {
               else that didn&apos;t fit here.
             </p>
             <a
-              href="/resume.pdf"
+              href="/gabriel_ortiz_resume_2026.pdf"
               download
               className="inline-flex items-center gap-2.5 px-8 py-4 bg-accent text-[#0a0a0a] font-mono text-sm font-bold rounded-lg hover:bg-accent/90 active:scale-95 transition-all duration-200"
             >
