@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Lorem Ipsum",
+    title: "AirViz",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.",
-    tech: ["Python", "React", "PostgreSQL"],
-    github: "https://github.com/gabrielortiz00",
+      "3D visualization of US airspace boundaries in a browser. Made to help pilots build a better spatial understanding of the airspace around them before they fly.",
+    tech: ["JavaScript", "Mapbox GL JS", "deck.gl"],
+    github: "https://github.com/gabrielortiz00/airviz",
     live: null,
   },
   {
