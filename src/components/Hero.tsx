@@ -38,17 +38,16 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="text-6xl sm:text-7xl md:text-8xl font-bold text-[#ededed] tracking-tight leading-none mb-6"
+          className="text-6xl sm:text-7xl md:text-8xl font-bold text-[#ededed] tracking-tight leading-none mb-6 font-[family-name:var(--font-display)]"
         >
           Gabriel Ortiz.
         </motion.h1>
 
-        {/* TODO: update this one-liner to describe yourself */}
         <motion.p
           variants={item}
           className="text-lg sm:text-xl text-[#737373] max-w-lg leading-relaxed mb-10"
         >
-          CS student @ Northeastern building things with code.
+          CS @ Northeastern building things and flying planes.
         </motion.p>
 
         <motion.div variants={item} className="flex flex-wrap gap-4">

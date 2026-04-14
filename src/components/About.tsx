@@ -38,21 +38,21 @@ export default function About() {
             className="md:col-span-3 space-y-4 text-[#737373] text-base leading-7"
           >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Born in San Diego, but raised mostly in Mexico, I got into coding around 13
+              with no real plan, just an Arduino, some free time, and a lot of trial and error.
+              Built a weather station for my house, made a couple of physics games in Unity for
+              no reason other than curiosity. That's more or less how it started.
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              I'm drawn to the logic and systems side of things, the math, the way things actually
+              work under the hood. The fact that I can open my computer and build anything that
+              comes to mind is a fascinating idea that immediately caught my eye the first time I
+              opened an IDE. I write mostly in Python and Java. One of my first real projects was
+              a cost management tool I built for a Mexican manufacturing company while in high school.
             </p>
             <p>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-              ultricies eget, tempor sit amet, ante.
+              Certified private pilot, freelance DJ, mountain biker, and space nerd. I also speak
+              Spanish and German.
             </p>
           </motion.div>
 
