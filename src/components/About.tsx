@@ -41,10 +41,10 @@ export default function About() {
               Born in San Diego, but raised mostly in Mexico, I got into coding around 13
               with no real plan, just an Arduino, some free time, and a lot of trial and error.
               Built a weather station for my house, made a couple of physics games in Unity for
-              no reason other than curiosity. That's more or less how it started.
+              no reason other than curiosity. That&apos;s more or less how it started.
             </p>
             <p>
-              I'm drawn to the logic and systems side of things, the math, the way things actually
+              I&apos;m drawn to the logic and systems side of things, the math, the way things actually
               work under the hood. The fact that I can open my computer and build anything that
               comes to mind is a fascinating idea that immediately caught my eye the first time I
               opened an IDE. I write mostly in Python and Java. One of my first real projects was
