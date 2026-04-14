@@ -12,19 +12,19 @@ const projects = [
     live: null,
   },
   {
-    title: "Dolor Sit Amet",
+    title: "BYP Import Cost Accumulator",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.",
-    tech: ["TypeScript", "Node.js"],
-    github: "https://github.com/gabrielortiz00",
+      "Full-stack desktop app built for a Mexican painting supplies manufacturer to calculate product costs including import fees, taxes, shipping, and other costs. Pulls live exchange rates, handles user auth, and visualized cost breakdowns.",
+    tech: ["Java", "JavaFX", "Apache PDFBox"],
+    github: "https://github.com/gabrielortiz00/byp-cost-calculator",
     live: null,
   },
   {
-    title: "Consectetur",
+    title: "Weight & Balance Manager",
     description:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum tortor quam feugiat vitae.",
-    tech: ["Java", "Spring Boot"],
-    github: "https://github.com/gabrielortiz00",
+      "Web app for general aviation pilots to manage aircraft weight and balance profiles and verify they comply with FAA regulations before flight. Includes flight envelope visualizations and pre-flight checklists.",
+    tech: ["Python", "Flask", "SQL"],
+    github: "https://github.com/gabrielortiz00/weight-balance",
     live: null,
   },
 ];
