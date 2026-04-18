@@ -14,7 +14,7 @@ export default function Resume() {
             transition={{ duration: 0.6 }}
           >
             <p className="font-mono text-accent text-xs tracking-widest mb-4">
-              03. resume
+              04. resume
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#ededed] mb-4">
               want the full picture?

@@ -69,7 +69,7 @@ export default function Contact() {
           className="mb-14"
         >
           <p className="font-mono text-accent text-xs tracking-widest mb-3">
-            04. contact
+            05. contact
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#ededed] mb-4">
             let&apos;s talk
