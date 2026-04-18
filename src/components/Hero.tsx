@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import HeroRadar from "./HeroRadar";
+import HeroWebGL from "./HeroWebGL";
 
 const container = {
   hidden: {},
-  show: {
-    transition: { staggerChildren: 0.12 },
-  },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item = {
@@ -18,7 +16,7 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 pt-20">
-      <HeroRadar />
+      <HeroWebGL />
 
       <motion.div
         variants={container}
@@ -26,10 +24,7 @@ export default function Hero() {
         animate="show"
         className="max-w-3xl"
       >
-        <motion.p
-          variants={item}
-          className="font-mono text-accent text-sm mb-5 tracking-widest"
-        >
+        <motion.p variants={item} className="font-mono text-accent text-sm mb-5 tracking-widest">
           hello, i&apos;m
         </motion.p>
 
@@ -40,10 +35,7 @@ export default function Hero() {
           Gabriel Ortiz.
         </motion.h1>
 
-        <motion.p
-          variants={item}
-          className="text-lg sm:text-xl text-[#737373] max-w-lg leading-relaxed mb-10"
-        >
+        <motion.p variants={item} className="text-lg sm:text-xl text-[#737373] max-w-lg leading-relaxed mb-10">
           CS @ Northeastern building things and flying planes.
         </motion.p>
 
@@ -53,18 +45,8 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-[#0a0a0a] font-mono text-sm font-bold rounded-lg hover:bg-accent/90 active:scale-95 transition-all duration-200"
           >
             see my work
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M19 9l-7 7-7-7"
-              />
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
             </svg>
           </a>
           <a
