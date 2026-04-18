@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import HeroRadar from "./HeroRadar";
 
 const container = {
   hidden: {},
@@ -17,11 +18,7 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 pt-20">
-      {/* Subtle accent glow in the background */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.04] bg-accent blur-[120px]"
-      />
+      <HeroRadar />
 
       <motion.div
         variants={container}
