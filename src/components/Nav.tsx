@@ -7,7 +7,6 @@ const navLinks = [
   { label: "about", href: "#about" },
   { label: "skills", href: "#skills" },
   { label: "projects", href: "#projects" },
-  { label: "resume", href: "#resume" },
   { label: "contact", href: "#contact" },
 ];
 
@@ -47,6 +46,13 @@ export default function Nav() {
             {link.label}
           </a>
         ))}
+        <a
+          href="/gabriel_ortiz_resume_2026.pdf"
+          download
+          className="font-mono text-xs px-3 py-1.5 border border-[#1f1f1f] text-[#737373] rounded hover:border-accent/40 hover:text-[#ededed] transition-all duration-200 tracking-wider"
+        >
+          resume
+        </a>
       </nav>
     </motion.header>
   );
