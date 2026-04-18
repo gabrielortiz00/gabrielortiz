@@ -12,12 +12,17 @@ const links = [
   {
     label: "github",
     href: "https://github.com/gabrielortiz00",
-    display: "github.com/gabrielortiz00",
+    display: "github",
   },
   {
     label: "linkedin",
     href: "https://linkedin.com/in/gabrielortiz00",
-    display: "linkedin.com/in/gabrielortiz00",
+    display: "linkedin",
+  },
+  {
+    label: "resume",
+    href: "/gabriel_ortiz_resume_2026.pdf",
+    display: "resume.pdf",
   },
 ];
 
@@ -50,10 +55,19 @@ function LinkedInIcon() {
   );
 }
 
+function DocumentIcon() {
+  return (
+    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  );
+}
+
 function getIcon(label: string) {
   if (label === "email") return <EmailIcon />;
   if (label === "github") return <GitHubIcon />;
   if (label === "linkedin") return <LinkedInIcon />;
+  if (label === "resume") return <DocumentIcon />;
   return null;
 }
 
@@ -69,7 +83,7 @@ export default function Contact() {
           className="mb-14"
         >
           <p className="font-mono text-accent text-xs tracking-widest mb-3">
-            05. contact
+            04. contact
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#ededed] mb-4">
             let&apos;s talk
@@ -91,8 +105,9 @@ export default function Contact() {
             <a
               key={label}
               href={href}
-              target={label !== "email" ? "_blank" : undefined}
-              rel={label !== "email" ? "noopener noreferrer" : undefined}
+              target={label === "github" || label === "linkedin" ? "_blank" : undefined}
+              rel={label === "github" || label === "linkedin" ? "noopener noreferrer" : undefined}
+              download={label === "resume" ? true : undefined}
               className="inline-flex items-center gap-3 px-5 py-3.5 border border-[#1f1f1f] rounded-lg font-mono text-sm text-[#737373] hover:border-accent/30 hover:text-[#ededed] hover:bg-accent/5 transition-all duration-300"
             >
               <span className="text-accent">{getIcon(label)}</span>
