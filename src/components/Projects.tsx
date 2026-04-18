@@ -27,6 +27,14 @@ const projects = [
     github: "https://github.com/gabrielortiz00/weight-balance",
     live: null,
   },
+  {
+    title: "Open Flight Schools",
+    description:
+      "Open-source, community-maintained directory of every flight school in the US. Features an interactive Mapbox map with filterable pins, school detail pages, and community-submitted entries with a moderation queue.",
+    tech: ["TypeScript", "Next.js", "Supabase", "Mapbox GL JS"],
+    github: "https://github.com/gabrielortiz00/open-flight-schools",
+    live: "https://openflightschools.com",
+  },
 ];
 
 function GitHubIcon() {
