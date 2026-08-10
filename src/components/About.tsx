@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const facts = [
   { label: "school", value: "Northeastern University" },
-  { label: "year", value: "Freshman · Class of 2029" },
+  { label: "year", value: "Sophomore · Class of 2029" },
   { label: "location", value: "Boston, MA" },
   { label: "major", value: "Computer Science" },
 ];
