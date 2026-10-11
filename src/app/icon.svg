@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
-  <rect width="36" height="36" rx="6" fill="#0a0a0a"/>
+  <rect width="36" height="36" rx="6" fill="#171717"/>
   <text
-    x="20"
-    y="21.5"
+    x="18"
+    y="24"
     text-anchor="middle"
-    fill="#00ff88"
-    font-family="'Courier New', monospace"
-    font-size="20"
-    font-weight="700"
-  >go.</text>
+    fill="#ffffff"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="16"
+    font-weight="600"
+  >GO</text>
 </svg>
