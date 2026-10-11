@@ -75,7 +75,8 @@ export default function KonamiCode() {
         index++;
         if (index === SEQUENCE.length) {
           index = 0;
-          active.current ? disable() : enable();
+          if (active.current) disable();
+          else enable();
           active.current = !active.current;
         }
       } else {
