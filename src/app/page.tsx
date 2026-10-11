@@ -43,8 +43,7 @@ export default function Home() {
     <main className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
       <KonamiCode />
 
-      <p className={label}>Personal record · {new Date().getFullYear()}</p>
-      <h1 className="mt-3 text-5xl font-bold tracking-tight sm:text-6xl">{profile.name}</h1>
+      <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">{profile.name}</h1>
       <p className="mt-4 max-w-xl text-lg leading-8 text-muted">
         Computer science student at Northeastern. I build software for aviation,
         mapping, and data problems.
@@ -53,10 +52,7 @@ export default function Home() {
       {/* Header block, styled like the front page of a logbook */}
       <div className="mt-10 grid border border-rule bg-paper sm:grid-cols-4">
         <Field name="Status" className="border-b sm:col-span-2 sm:border-r">
-          <span className="inline-flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-red" />
-            Seeking co-op · Jan–Jun 2027
-          </span>
+          Seeking co-op · Jan–Jun 2027
         </Field>
         <Field name="Base" className="border-b sm:border-r">
           {profile.location}
