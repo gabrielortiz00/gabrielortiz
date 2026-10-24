@@ -1,5 +1,6 @@
 // All site content lives here. Keep it in sync with public/Gabriel_Ortiz_Resume.pdf.
 
+export const SITE_URL = "https://www.gabrielortiz.io";
 export const RESUME = "/Gabriel_Ortiz_Resume.pdf";
 
 export const profile = {
@@ -36,16 +37,40 @@ export const experience = [
   },
 ];
 
-export const projects = [
+export type Project = {
+  name: string;
+  year: string;
+  summary: string;
+  description: string;
+  highlights?: string[];
+  image?: { src: string; alt: string; width: number; height: number };
+  tech: string[];
+  code: string;
+  live: string | null;
+};
+
+export const projects: Project[] = [
   {
     name: "AirViz",
     year: "2026",
-    summary: "3D airspace visualizer for student pilots",
+    summary: "3D map of US airspace, built from FAA data",
     description:
-      "Renders FAA Class B, C, and D airspace for 13 terminal areas as stacked 3D volumes instead of flat sectional charts, built from FAA NASR data converted to GeoJSON.",
-    tech: ["JavaScript", "Mapbox GL JS", "Vite", "QGIS"],
+      "Pilots learn airspace from flat sectional charts, which makes the real 3D shape hard to picture. AirViz shows every Class B, C, and D airspace in the US as 3D volumes at their real floors and ceilings, on top of real terrain, in the browser.",
+    highlights: [
+      "Data pipeline turns the FAA's NASR shapefile into the map data: GDAL export and simplification (about 15x smaller), then a script that cuts overlapping volumes the way the FAA legal descriptions assign them.",
+      "The build checks the result against known points from sectional charts and fails if any are wrong, e.g. 1,499 ft over Hayward is inside Hayward's Class D and 1,500 ft is not.",
+      "A GitHub Actions job pulls each new 28-day FAA cycle, rebuilds and verifies the data, and commits it so Vercel redeploys. If anything fails it opens an issue and the site keeps the previous cycle.",
+      "Airport search across about 5,000 public-use airports, and the Mode C veil, generated from the airport list in 14 CFR Part 91 Appendix D.",
+    ],
+    image: {
+      src: "/projects/airviz.jpg",
+      alt: "AirViz showing San Francisco Class B airspace shelves in 3D over the Bay Area",
+      width: 1200,
+      height: 630,
+    },
+    tech: ["JavaScript", "MapLibre GL JS", "deck.gl", "GDAL", "GitHub Actions", "Vite"],
     code: "https://github.com/gabrielortiz00/airviz",
-    live: null as string | null,
+    live: "https://airviz.gabrielortiz.io",
   },
   {
     name: "Open Flight Schools",
@@ -55,7 +80,7 @@ export const projects = [
       "Open-source directory with an interactive map, filterable school listings, detail pages, and community-submitted entries reviewed through a moderation queue.",
     tech: ["TypeScript", "Next.js", "Supabase", "Mapbox GL JS"],
     code: "https://github.com/gabrielortiz00/open-flight-schools",
-    live: "https://openflightschools.com" as string | null,
+    live: "https://openflightschools.com",
   },
   {
     name: "Cost Accumulation Software",
@@ -65,7 +90,7 @@ export const projects = [
       "Desktop app that replaced Excel formulas for the costing team at BYP, a Mexican paint-applicator manufacturer. Calculates product cost from shipping, taxes, container limits, and import fees, with user auth, live exchange rates, and a margin-based pricing calculator.",
     tech: ["Java", "JavaFX"],
     code: "https://github.com/gabrielortiz00/byp-cost-calculator",
-    live: null as string | null,
+    live: null,
   },
 ];
 
@@ -84,8 +109,8 @@ export const education = {
 
 export const skills = [
   { label: "Languages", items: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "HTML/CSS"] },
-  { label: "Libraries", items: ["NumPy", "Pandas", "Matplotlib", "asyncio", "JavaFX", "Mapbox GL JS"] },
-  { label: "Tools", items: ["Git", "REST APIs", "pytest", "QGIS"] },
+  { label: "Libraries", items: ["NumPy", "Pandas", "Matplotlib", "asyncio", "JavaFX", "MapLibre GL JS", "deck.gl", "Mapbox GL JS"] },
+  { label: "Tools", items: ["Git", "GitHub Actions", "REST APIs", "pytest", "GDAL", "QGIS", "Vite"] },
 ];
 
 export const interests = [
