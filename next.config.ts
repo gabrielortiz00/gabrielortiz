@@ -1,13 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
+  async headers() {
     return [
-      // Old resume URL, in case it was shared before the file was renamed
+      // PDFs (the resume) stay downloadable but out of search results
       {
-        source: "/gabriel_ortiz_resume_2026.pdf",
-        destination: "/Gabriel_Ortiz_Resume.pdf",
-        permanent: true,
+        source: "/:file(.*\\.pdf)",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
     ];
   },

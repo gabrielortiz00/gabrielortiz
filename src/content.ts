@@ -1,7 +1,6 @@
-// All site content lives here. Keep it in sync with public/Gabriel_Ortiz_Resume.pdf.
+// All site content lives here. Keep it in sync with the resume.
 
 export const SITE_URL = "https://www.gabrielortiz.io";
-export const RESUME = "/Gabriel_Ortiz_Resume.pdf";
 
 export const profile = {
   name: "Gabriel Ortiz",
@@ -15,7 +14,6 @@ export const links = [
   { label: "Email", href: `mailto:${profile.email}` },
   { label: "GitHub", href: "https://github.com/gabrielortiz00" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/gabrielortiz00" },
-  { label: "Resume", href: RESUME },
 ];
 
 export const about = [
@@ -121,5 +119,5 @@ export const interests = [
 ];
 
 export function isExternal(href: string) {
-  return href.startsWith("http") || href === RESUME;
+  return href.startsWith("http");
 }
